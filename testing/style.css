@@ -1,0 +1,40 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+div{
+ height: 50%;
+ width: 20%;
+ /* background-color: aqua; */
+}
+
+.img1{
+ height: 80%;
+ aspect-ratio: 1;
+ border-radius: 50%;
+ display: block;
+}
+
+.img2{
+ height: 20%;
+ aspect-ratio: 1;
+ border: 50%;
+ display: none;  
+}
+
+.img1:hover ~ .img2{
+ transform: translateY(-100px);
+ display: block;
+ transition-duration: 2s;
+}
+
